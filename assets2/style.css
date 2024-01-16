@@ -1,0 +1,140 @@
+.flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+ }
+
+ .logo {
+    width: 150px;
+ }
+
+ .trofeus {
+    width: 450px;
+    margin-left: 250px;
+ }
+
+ .abreviacao {
+    width: 300px;
+    margin-left: 200px;
+ }
+
+ div nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    list-style: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 25px;
+    background: rgb(255, 0, 0);
+    }
+.patrocinio{
+    width: 90px;
+    position: absolute;
+    left: 70px;
+    top: auto;
+
+}
+
+ div nav ul li {
+    padding: 0 15px;
+
+ }
+ div nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+ }
+
+ .cabecalho{
+    margin: 20px;
+    background: red;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    padding: 0 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+ }
+
+ .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+   
+  
+ }
+
+ .banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/simbolo.png);
+    background-repeat: repeat-y;
+    background-size: 70%;
+    background-position: left;
+    z-index: -1;
+    opacity: 0.2;
+    
+ }
+
+ .banner h1 {
+    margin: 40px;
+ }
+
+ .banner p {
+
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    text-align: justify;
+    }
+
+ .mapa {
+    margin-top: 90px;
+    width: 20%;
+    
+ }
+ 
+ div figure figcaption{
+    text-align: center;
+    align-items: center;
+ }
+  div h1{
+    text-align: center;
+  }
+ .historia{
+    width: 70%;
+ }
+
+ .rodape{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    text-decoration: none;
+ }
+ .rodape img{
+    width: 60px;
+ }
+ footer{
+    border: 3px solid black;
+    background: red;
+    border-radius: 10px 10px 10px 10px;
+ }
+ footer ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    
+ }
+ .social{
+    margin: 10px;
+    border: 2px solid black;
+    background: black;
+  
+ }

@@ -5,104 +5,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>São Paulo FC</title>
+   <link rel="stylesheet" href="style.css">
 </head>
-<style>
-   .flex {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-   }
-
-   .logo {
-      width: 150px;
-   }
-
-   .trofeus {
-      width: 450px;
-      margin-left: 250px;
-   }
-
-   .abreviacao {
-      width: 300px;
-      margin-left: 200px;
-   }
-
-   div nav ul {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 40px;
-      margin-right: 20px;
-      list-style: none;
-      color: #ffffff;
-      font-family: Arial, Helvetica, sans-serif
-   }
-
-   div nav ul li {
-      padding: 0 15px;
-   }
-
-   li {
-      margin: 10px 10px 10px 10px;
-      background: rgb(255, 0, 0);
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-   }
-
-   .banner {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      width: 100%;
-      position: relative;
-      border: 2px solid blue;
-    
-   }
-
-   .banner::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: url(../images/simbolo.png);
-      background-repeat: repeat-y;
-      background-size: 70%;
-      background-position: left;
-      z-index: -1;
-      opacity: 0.2;
-      
-   }
-
-   .banner h1 {
-      margin: 40px;
-   }
-
-   .banner p {
-
-      display: flex;
-      flex-direction: row;
-      margin: 40px;
-      text-align: justify;
-      }
-
-   .mapa {
-      margin-top: 90px;
-      width: 20%;
-   }
-   .mapa figcaption{
-      margin: 5px 10px 0 20px;
-      
-   }
-   .historia{
-      width: 70%;
-   }
-
-   footer li{
-      display: flex;
-      flex-direction: row ;
-      align-items: flex-end;
-      list-style: none;
-      border: 2px solid red;
-   }
-</style>
 
 <body>
    <header class="flex">
@@ -113,10 +17,12 @@
    <hr />
 
    <div>
-      <nav>
+      
+      <nav class="cabecalho">
          <ul>
+            <img class="patrocinio" src="../images/patrocinador.png" alt="patrocinador">
             <li>História do Clube</li>
-            <li>Redes sociais</li>
+            <li><a href="#footer" > Redes sociais</a></li>
          </ul>
       </nav>
    </div><br>
@@ -183,7 +89,47 @@
                <img src="../images/morumbi.png" alt="Estádio" width="100%">
                <figcaption>Mapa do Morumbi</figcaption>
             </figure>
-            
+            <h1>Titúlos</h1>
+            <figure>
+               <img src="../images/libertadores.png" alt="Trofeu libertadores" width="100%">
+               <figcaption>3x Libertadores</figcaption>
+            </figure>
+            <figure>
+               <img src="../images/mundial.png" alt="Trofeu mundial" width="100%">
+               <figcaption>3x Mundial</figcaption>
+            </figure>
+            <figure >
+               <img src="../images/copa do brasil.png" alt="Trofeu copa do brasil" width="100%">
+               <figcaption>1x Copa do Brasil</figcaption>
+            </figure>
+            <figure >
+               <img src="../images/paulista.png" alt="Trofeu Campeonato Paulista" width="100%">
+               <figcaption>19x Campeonato Paulista</figcaption>
+            </figure>
+            <figure >
+               <img src="../images/brasileiro.png" alt="Trofeu Campeonato Brasileiro" width="100%">
+               <figcaption>6x Campeonato Brasileiro</figcaption>
+            </figure>
+            <figure >
+               <img src="../images/riosaopaulo.png" alt="Trofeu Rio-São Paulo" width="100%">
+               <figcaption>1x Torneio Rio-São Paulo</figcaption>
+            </figure>
+            <figure >
+               <img src="../images/sulamericana.png" alt="Trofeu Sul-Americana" width="100%">
+               <figcaption>1x Copa Sul-Americana</figcaption>
+            </figure>
+            <figure >
+               <img src="../images/conmebol.png" alt="Trofeu Conmebol" width="100%">
+               <figcaption>1x Copa Conmebol</figcaption>
+            </figure>
+            <figure >
+               <img src="../images/recopasula.png" alt="Trofeu Recopa Sul-Americana" width="100%">
+               <figcaption>2x Recopa Sul-Americana</figcaption>
+            </figure>
+            <figure >
+               <img src="../images/superlibertadores.png" alt="Trofeu Supercopa Libertadores" width="100%">
+               <figcaption>1x Supercopa Libertadores</figcaption>
+            </figure>
          </div>
 
       </div>
@@ -191,21 +137,24 @@
 
    </section>
 
-   <footer>
-      <ul>
+   <footer id ="footer">
+      <ul class = rodape>
          <li>
-            <a href="#">
-               <img src="" alt="">
+            
+            <a href="https://www.instagram.com/saopaulofc/">
+               <img src="../images/instagram.png" alt="instagram" ><p class="social">Instagram</p>
             </a>
          </li>
          <li>
-            <a href="#">
-               <img src="" alt="">
+            
+            <a href="https://twitter.com/SaoPauloFC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+               <img src="../images/twitter.png" alt="twitter"> <p class="social">Twitter</p>
             </a>
          </li>
          <li>
-            <a href="#">
-               <img src="" alt="">
+            
+            <a href="https://www.facebook.com/saopaulofc/">
+               <img src="../images/facebook.png" alt="facebook"><p class="social">Facebook</p>
             </a>
          </li>
       </ul>
